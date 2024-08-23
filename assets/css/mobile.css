@@ -1,6 +1,6 @@
 @media only screen and (max-width: 1800px) {
     .header-main-con .navbar-nav {
-        gap: 14px;
+        gap: 4rem;
         margin-right: 20px;
     }
 
@@ -340,6 +340,9 @@
     .index2-about-con {
         gap: 40px;
     }
+    .surgery-about-con{
+        gap: 40px;
+    }
 
     .index2-footer-sec {
         padding-top: 20px;
@@ -609,7 +612,9 @@
     .index2-about-con {
         grid-template-columns: 48% 44%;
     }
-
+    .surgery-about-con{
+        grid-template-columns: 48% 44%;
+    }
     .index2-about-txt-con p {
         margin-bottom: 20px;
     }
@@ -756,6 +761,9 @@
     }
 
     .sub-banner-section {
+        height: 600px;
+    }
+    .cover-image{
         height: 600px;
     }
 
@@ -994,7 +1002,7 @@
     }
 
     .footer-inner-sec {
-        margin-top: -40px;
+        /* margin-top: -40px; */
     }
 
     /* index2 page responsive start */
@@ -1022,6 +1030,9 @@
     }
 
     .index2-about-con {
+        grid-template-columns: 59% 36.5%;
+    }
+    .surgery-about-con{
         grid-template-columns: 59% 36.5%;
     }
 
@@ -1397,6 +1408,9 @@
     .sub-banner-section {
         height: 500px;
     }
+    .cover-image{
+        height: 500px;
+    }
 
     .about-us-about .about-img-con figure {
         width: 100%;
@@ -1576,7 +1590,7 @@
     .header-main-con .navbar-nav {
         gap: 12px;
         margin-right: 0;
-        padding: 20px 20px 0;
+        padding: 20px 20px;
     }
 
     /* cross button */
@@ -2088,6 +2102,9 @@
     .index2-about-con {
         grid-template-columns: 59% 35%;
     }
+    .surgery-about-con{
+        grid-template-columns: 59% 35%;
+    }
 
     .index2-about-image-box::before {
         width: 50px;
@@ -2438,6 +2455,10 @@
     }
 
     .sub-banner-section {
+        height: 420px;
+    }
+
+    .cover-image{
         height: 420px;
     }
 
@@ -2866,6 +2887,10 @@
         grid-template-columns: 100%;
         position: relative;
     }
+    .surgery-about-con{
+        grid-template-columns: 100%;
+        position: relative;
+    }
 
     .index2-about-txt-con {
         order: 2;
@@ -3146,7 +3171,7 @@
     }
 
     .contact-image-con {
-        display: none;
+        /* display: none; */
     }
 
     .index3-contact-con .contact-inner-con {
@@ -3226,7 +3251,9 @@
     .sub-banner-section {
         height: 370px;
     }
-
+    .cover-image{
+        height: 370px;
+    }
     .about-special-txt {
         left: 50%;
         top: 13%;
@@ -3285,6 +3312,9 @@
 }
 
 @media only screen and (max-width: 575px) {
+    .cover-image{
+        height: 331.701px;
+    }
     .cart-box {
         right: 50px;
     }
@@ -3574,6 +3604,7 @@
 
     .footer-main-section {
         padding-bottom: 40px;
+        padding-top: 40px;
     }
 
     /* index2 page responsive start */
@@ -3614,6 +3645,9 @@
     }
 
     .index2-about-con {
+        gap: 30px;
+    }
+    .surgery-about-con{
         gap: 30px;
     }
 
@@ -3884,6 +3918,9 @@
     }
 
     .sub-banner-section {
+        height: 330px;
+    }
+    .cover-image{
         height: 330px;
     }
 

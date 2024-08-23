@@ -65,11 +65,21 @@ h5 {
 }
 
 .small-text {
-    font-size: 16px;
+    font-size: 32px;
     line-height: 28px;
     font-weight: 600;
     color: var(--accent);
     display: block;
+}
+
+.title-text{
+    color: #232323;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px; /* 125% */
 }
 
 .generic-btn a {
@@ -216,7 +226,7 @@ h5 {
 /* header style */
 /* banner style */
 .banner-main-section {
-    background: url(../images/banner-bg-image.jpg) no-repeat top;
+    background: url(../images/projectImages/home-cover.png) no-repeat top;
     height: 1050px;
     position: relative;
     background-size: cover;
@@ -419,7 +429,7 @@ h5 {
 .treatment-types>figure {
     border-radius: 15px;
     overflow: hidden;
-    margin-bottom: 57px;
+    margin-bottom: 16px;
     transition: .4s ease-in-out;
 }
 
@@ -455,6 +465,7 @@ h5 {
 
 .generic-title .small-text {
     margin-bottom: 7px;
+    margin-top: 20px;
 }
 
 .treatment-types p {
@@ -923,7 +934,8 @@ h5 {
 
 .project-main-section .owl-carousel .owl-dots {
     text-align: center;
-    bottom: 49px;
+    /* bottom: 49px; */
+    top: 3rem;
     position: relative;
 }
 
@@ -1142,7 +1154,7 @@ h5 {
 /* team section style start */
 .team-inner-section {
     display: grid;
-    grid-template-columns: 23% 23% 23% 23%;
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
@@ -1192,7 +1204,8 @@ h5 {
 
 .member-img-details {
     overflow: hidden;
-    margin-bottom: 23px;
+    /* margin-bottom: 23px; */
+    margin-bottom: 12px;
     display: inline-block;
 }
 
@@ -1573,7 +1586,16 @@ h5 {
 }
 
 .footer-main-section {
-    padding-bottom: 90px;
+    padding-top: 28px;
+    padding-bottom: 38px;
+    /* display: flex;
+    width: 1440px;
+    height: 261.054px;
+    padding: 37px 197px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0; */
 }
 
 .footer-boxes {
@@ -1581,9 +1603,43 @@ h5 {
     padding-right: 45px;
 }
 
+.footer-header{
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+.footer-content{
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+}
+.line{
+    width: 1046px;
+    height: 1px;
+    background: #FFF;
+}
+.copyright-section{
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 177.778% */
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .footer-main-section::after {
     content: "";
-    background: url(../images/footer-shape-img.png) no-repeat center;
+    /* background: url(../images/footer-shape-img.png) no-repeat center; */
     width: 301px;
     height: 285px;
     position: absolute;
@@ -1609,7 +1665,9 @@ h5 {
 .footer-inner-sec {
     display: grid;
     gap: 30px;
-    grid-template-columns: 29% 13.3% 18.6% 20%;
+    /* grid-template-columns: 29% 13.3% 18.6% 20%; */
+    grid-template-columns: 29% 13.3% 18.6%;
+    width: 100%;
     justify-content: center;
 }
 
@@ -1900,6 +1958,13 @@ h5 {
     grid-template-columns: 48% 48%;
     align-items: center;
 }
+.surgery-about-con{
+    display: grid;
+    gap: 97px;
+    grid-template-columns: 48% 48%;
+}
+
+
 
 .index2-about-txt-con ul {
     display: grid;
@@ -1931,6 +1996,14 @@ h5 {
     top: 6px;
 }
 
+.surgery-absolute-img{
+    position: absolute;
+    right: 31px;
+    top: 332px;
+    width: 212px;
+    height: 212px;
+}
+
 .index2-about-txt-con .generic-btn a {
     padding: 21px 43px 21px 44px;
     transition: .3s ease-in-out;
@@ -1956,15 +2029,19 @@ h5 {
     margin-top: 4px;
 }
 
-.index2-about-image-box::before {
+.index2-about-image-box.has-before::before {
+
     content: "";
-    background: rgb(0, 0, 0, .1);
+    background: url(../images/projectImages/surgery-image2.png) no-repeat center;
     width: 80px;
     height: 80px;
     border-radius: 100%;
     position: absolute;
     bottom: 24px;
     left: -26px;
+
+    border-radius: 100px;
+    border:solid 7px #FFF;
 }
 
 /* index2 about section style end */
@@ -2631,6 +2708,7 @@ h5 {
 
 .service-type-box figure {
     margin-bottom: 23px;
+    text-align: center;
 }
 
 .service-type-box a,
@@ -3174,14 +3252,31 @@ h5 {
 /* about us page styling start */
 /* about us banner styling */
 .sub-banner-section {
-    background: url(../images/about-banner-img.jpg) no-repeat center;
+    background: url(../images/projectImages/home-image1.png) no-repeat center center;
     background-size: cover;
+    width: 100%;  /* Adjusted to make the section responsive */
+    /* max-width: 1440px;  */
+    height: 345.701px;
+    flex-shrink: 0;
+    margin: 0 auto; 
+   
+}
+.cover-image {
+    background-color: #231F20;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 640px;
+    height: 345.701px;
+    z-index: 0; 
+   
 }
 
 .sub-banner-inner-con {
+    color: #ffffff; /* Example: white text */
     margin-top: 15px;
+    z-index: 999 !important;
 }
 
 .sub-banner-inner-con h1,
@@ -3226,10 +3321,23 @@ h5 {
 /* about us banner styling */
 /* about sec styling start */
 .about-us-about .about-inner-con {
-    gap: 65px;
-    grid-template-columns: 45.6% 45%;
+    /* gap: 65px;
+    grid-template-columns: 45.6% 45%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Marcellus;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
-
+.about-custom-container {
+    margin-top: 60px;
+    max-width: 1140px;
+    margin: 0 auto; /* Centers the container horizontally */
+    padding: 0 15px; /* Optional: adds padding for responsiveness */
+}
 .about-us-about .about-img-con figure {
     width: 507px;
     height: 555px;
@@ -3744,3 +3852,36 @@ h5 {
 }
 
 /* top to bottom btn */
+
+
+.surgery-experience{
+    margin-left: 1rem;
+    width: 100%;
+}
+.surgery-experience ul {
+    display: block;
+}
+.surgery-experience ul li {
+    color: #7A7A7A;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 10px;
+}
+
+
+.blackandwhite img {
+    filter: grayscale(100%);
+}
+
+
+.bg-green {
+    background-color: #166B5E !important /* Your desired color */
+}
+
+.color-white{
+    color: #FFF !important
+}
+
